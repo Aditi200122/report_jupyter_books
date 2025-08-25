@@ -3,25 +3,27 @@ title: "My Report"
 author: "Aditi"
 logo: "logo.png"
 
-# Execute notebooks
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
   allow_errors: true
   
-# Repository info
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Information about where the book exists on the web
 repository:
-  url: "https://github.com/Aditi200122/report_jupyter_books"
-  branch: "main"
+  url: https://github.com/Aditi200122/report_jupyter_books # Online location of your book
+  branch: master  # Which branch of the repository should be used when creating links (optional)
 
-# HTML settings
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_repository_button: true
   use_issues_button: true
-  use_edit_page_button: true
-
-html_theme_options:
-  launch_buttons:
-    binderhub_url: "https://mybinder.org"
-    colab_url: "https://colab.research.google.com"
-    thebe: true
-    
+  use_repository_button: true
