@@ -2,34 +2,27 @@ title: My sample book
 author: Aditi
 logo: logo.png
 
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+  allow_errors: true
 
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+
+# Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
     targetname: book.tex
 
-bibtex_bibfiles:
-  - references.bib
-
+# Information about where the book exists on the web
 repository:
-  url: https://github.com/Aditi200122/report_jupyter_books
-  # path_to_book: docs
-  branch: master
+  url: https://github.com/Aditi200122/report_jupyter_books # Online location of your book
+  branch: master  # Which branch of the repository should be used when creating links (optional)
 
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: ""
   use_issues_button: true
   use_repository_button: true
-  use_jupyterlab_widgets: true   # ENABLE ipywidgets
-
-launch_buttons:
-  thebe: true
-  binderhub_url: https://mybinder.org
-  colab: true 
-  interactive: true
-
-sphinx:
-  config:
-    html_js_files:
-      - https://cdn.plot.ly/plotly-latest.min.js
