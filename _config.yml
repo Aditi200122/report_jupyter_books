@@ -3,25 +3,21 @@ author: "Aditi"
 logo: "logo.png"
 
 # This specifies where your notebook source files are.
-# In your case, it's the top-level directory.
+# This single repository section is enough.
 repository:
   url: "https://github.com/Aditi200122/report_jupyter_books"
-  branch: "main" # or 'master' depending on your branch name
+  branch: "main"
 
 html_theme_options:
   launch_buttons:
     binderhub_url: "https://mybinder.org"
     colab_url: "https://colab.research.google.com"
     thebe: true
-  repository_url: "https://github.com/Aditi200122/report_jupyter_books"
-  repository_branch: "main" # or "master"
+  use_repository_button: true # This option adds a button to go to your repository.
 
-# Other configurations you might want to include.
 execute:
   execute_notebooks: "force"
 
-# Specify a requirements file for Binder and Thebe to use.
-# You need to create this file in your repository.
 sphinx:
   config:
     html_js_files:
