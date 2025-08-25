@@ -1,16 +1,29 @@
+# Book settings
 title: "My Report"
 author: "Aditi"
 logo: "logo.png"
 
-repository:
-  url: "https://github.com/Aditi200122/report_jupyter_books"
-  branch: "main"
+# Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: force
+  allow_errors: true
 
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Repository info
+repository:
+  url: https://github.com/Aditi200122/report_jupyter_books
+  branch: main
+
+# HTML settings
 html:
   use_repository_button: true
-  use_edit_page_button: true
   use_issues_button: true
-
+  use_edit_page_button: true
+  
 html_theme_options:
   launch_buttons:
     binderhub_url: "https://mybinder.org"
@@ -18,15 +31,8 @@ html_theme_options:
     thebe: true
     notebook_interface: "jupyterlab"
 
-execute:
-  execute_notebooks: "force"
-
+# Enable Thebe (interactive code cells)
 thebe:
   binderhub_url: "https://mybinder.org"
   repository_url: "https://github.com/Aditi200122/report_jupyter_books"
-  branch: "main"
-
-sphinx:
-  config:
-    html_js_files:
-      - https://cdn.plot.ly/plotly-latest.min.js
+  branch: main
