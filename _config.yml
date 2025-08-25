@@ -3,36 +3,25 @@ title: "My Report"
 author: "Aditi"
 logo: "logo.png"
 
-# Force re-execution of notebooks on each build
+# Execute notebooks
 execute:
   execute_notebooks: force
   allow_errors: true
-
-# Define the name of the latex output file for PDF builds
-latex:
-  latex_documents:
-    targetname: book.tex
-
+  
 # Repository info
 repository:
-  url: https://github.com/Aditi200122/report_jupyter_books
-  branch: main
+  url: "https://github.com/Aditi200122/report_jupyter_books"
+  branch: "main"
 
 # HTML settings
 html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
-  
+
 html_theme_options:
   launch_buttons:
     binderhub_url: "https://mybinder.org"
     colab_url: "https://colab.research.google.com"
     thebe: true
-    notebook_interface: "jupyterlab"
-
-# Enable Thebe (interactive code cells)
-thebe:
-  binderhub_url: "https://mybinder.org"
-  repository_url: "https://github.com/Aditi200122/report_jupyter_books"
-  branch: main
+    
