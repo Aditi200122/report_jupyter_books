@@ -1,7 +1,6 @@
-jupyter
-jupyterlab
-notebook
 numpy
 pandas
-matplotlib
 plotly
+matplotlib
+scikit-learn
+ipywidgets
