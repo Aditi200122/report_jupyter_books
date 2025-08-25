@@ -1,14 +1,11 @@
-# Book settings
 title: "My Report"
 author: "Aditi"
 logo: "logo.png"
 
-# Repository
 repository:
   url: "https://github.com/Aditi200122/report_jupyter_books"
   branch: "main"
 
-# HTML
 html:
   use_repository_button: true
   use_edit_page_button: true
@@ -21,20 +18,14 @@ html_theme_options:
     thebe: true
     notebook_interface: "jupyterlab"
 
-# Execute
 execute:
   execute_notebooks: "force"
-
-# Enable Thebe (interactive cells)
-launch_buttons:
-  thebe: true
 
 thebe:
   binderhub_url: "https://mybinder.org"
   repository_url: "https://github.com/Aditi200122/report_jupyter_books"
   branch: "main"
 
-# Sphinx config
 sphinx:
   config:
     html_js_files:
