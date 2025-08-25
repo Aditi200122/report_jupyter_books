@@ -1,21 +1,39 @@
+# Book settings
 title: "My Report"
 author: "Aditi"
 logo: "logo.png"
-#repository
+
+# Repository info
 repository:
   url: "https://github.com/Aditi200122/report_jupyter_books"
   branch: "main"
-#html
+  path_to_book: ""   # optional: if your book is in a subfolder
+
+# HTML settings
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  extra_navbar: Powered by Jupyter Book
+
 html_theme_options:
   launch_buttons:
     binderhub_url: "https://mybinder.org"
     colab_url: "https://colab.research.google.com"
     thebe: true
-  use_repository_button: true
-#execute
+    notebook_interface: "jupyterlab"
+
+# Execute settings
 execute:
   execute_notebooks: "force"
-#sphinx
+
+# Enable Thebe (interactive code cells)
+thebe:
+  binderhub_url: "https://mybinder.org"
+  repository_url: "https://github.com/Aditi200122/report_jupyter_books"
+  branch: "main"
+
+# Sphinx config
 sphinx:
   config:
     html_js_files:
