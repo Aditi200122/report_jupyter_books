@@ -9,25 +9,22 @@ latex:
   latex_documents:
     targetname: book.tex
 
-bibtex_bibfiles:
-  - references.bib
-
 repository:
   url: https://github.com/Aditi200122/report_jupyter_books
-  # path_to_book: docs
   branch: master
 
 html:
-  favicon: ""
-  use_issues_button: true
   use_repository_button: true
-  use_jupyterlab_widgets: true   # ENABLE ipywidgets
+  use_issues_button: true
+  use_jupyterlab_widgets: true
 
-launch_buttons:
-  thebe: true
-  binderhub_url: https://mybinder.org
-  colab: true 
-  interactive: true
+html_theme_options:
+  launch_buttons:
+    thebe: true
+    notebook_interface: "classic"  # or "jupyterlab"
+
+thebe:
+  use_jupyterlite: true   # This is the key for instant in-browser kernel
 
 sphinx:
   config:
