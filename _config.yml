@@ -2,22 +2,24 @@ title: "My Report"
 author: "Aditi"
 logo: "logo.png"
 
-# This specifies where your notebook source files are.
-# This single repository section is enough.
+# This is the single, correct way to specify your repository.
 repository:
   url: "https://github.com/Aditi200122/report_jupyter_books"
   branch: "main"
 
+# This section configures the launch buttons and the repository link.
 html_theme_options:
   launch_buttons:
     binderhub_url: "https://mybinder.org"
     colab_url: "https://colab.research.google.com"
     thebe: true
-  use_repository_button: true # This option adds a button to go to your repository.
+  use_repository_button: true
 
+# This setting forces notebook execution during the build.
 execute:
   execute_notebooks: "force"
 
+# Your sphinx configuration for Plotly.
 sphinx:
   config:
     html_js_files:
