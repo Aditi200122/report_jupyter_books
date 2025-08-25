@@ -3,18 +3,16 @@ title: "My Report"
 author: "Aditi"
 logo: "logo.png"
 
-# Repository info
+# Repository
 repository:
   url: "https://github.com/Aditi200122/report_jupyter_books"
   branch: "main"
-  path_to_book: ""   # optional: if your book is in a subfolder
 
-# HTML settings
+# HTML
 html:
   use_repository_button: true
-  use_issues_button: true
   use_edit_page_button: true
-  extra_navbar: Powered by Jupyter Book
+  use_issues_button: true
 
 html_theme_options:
   launch_buttons:
@@ -23,11 +21,14 @@ html_theme_options:
     thebe: true
     notebook_interface: "jupyterlab"
 
-# Execute settings
+# Execute
 execute:
   execute_notebooks: "force"
 
-# Enable Thebe (interactive code cells)
+# Enable Thebe (interactive cells)
+launch_buttons:
+  thebe: true
+
 thebe:
   binderhub_url: "https://mybinder.org"
   repository_url: "https://github.com/Aditi200122/report_jupyter_books"
