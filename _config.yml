@@ -1,40 +1,35 @@
-# Book settings
-title: "My Report"
-author: "Aditi"
-logo: "logo.png"
+title: My sample book
+author: Aditi
+logo: logo.png
 
-# Execute notebooks
 execute:
   execute_notebooks: force
-  allow_errors: true
 
-# Repository info
-repository:
-  url: https://github.com/Aditi200122/report_jupyter_books
-  branch: master
-
-# HTML settings
-html:
-  use_repository_button: true
-  use_issues_button: true
-  use_edit_page_button: true
-
-# Launch buttons
-html_theme_options:
-  launch_buttons:
-    binderhub_url: "https://mybinder.org"
-    colab_url: "https://colab.research.google.com"
-    thebe: true
-    notebook_interface: "jupyterlab"
-
-# Thebe configuration
-thebe:
-  binderhub_url: "https://mybinder.org"
-  repository_url: "https://github.com/Aditi200122/report_jupyter_books"
-  branch: master
-
-# Latex (optional)
 latex:
   latex_documents:
     targetname: book.tex
-    
+
+bibtex_bibfiles:
+  - references.bib
+
+repository:
+  url: https://github.com/Aditi200122/report_jupyter_books
+  # path_to_book: docs
+  branch: master
+
+html:
+  favicon: ""
+  use_issues_button: true
+  use_repository_button: true
+  use_jupyterlab_widgets: true   # ENABLE ipywidgets
+
+launch_buttons:
+  thebe: true
+  binderhub_url: https://mybinder.org
+  colab: true 
+  interactive: true
+
+sphinx:
+  config:
+    html_js_files:
+      - https://cdn.plot.ly/plotly-latest.min.js
